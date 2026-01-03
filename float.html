@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navber</title>
+    <style>
+      .nav1 {
+        height: 90px;
+        max-width: 450px;
+        background-color: rgb(17, 194, 135);
+        margin: 0 auto;
+        border-radius: 40px;
+        overflow: hidden;
+        border: 2px solid rgb(231, 170, 16);
+      }
+      nav ul li {
+        list-style-type: none;
+        margin: 20px;
+        float: left;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+      }
+      a:hover {
+        text-decoration: underline;
+        background-color: white;
+        color: black;
+        transform: scale(1.1);
+        transition: 0.6s ease;
+      }
+      .nav1:hover {
+        background: linear-gradient(
+          55deg,
+          white,
+          rgb(241, 204, 39),
+          #fff,
+          pink,
+          white
+        );
+        border: 3px solid white;
+        transition: all 0.5s ease;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body style="background-color: antiquewhite">
+    <nav class="nav1">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="https://google.com">Services</a>
+        </li>
+        <li>
+          <a href="#">Conntact</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

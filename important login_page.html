@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover and focus</title>
+    <style>
+      body {
+        background-color: beige;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        background-color: rgb(232, 168, 84);
+        margin: o auto;
+        border: 2px double black;
+        padding: 3px;
+        border-radius: 15px;
+        text-shadow: 1px 1px white;
+      }
+      input[type="text"] {
+        background-color: rgb(143, 225, 213);
+        color: black;
+        margin: 10px;
+        border-radius: 5px;
+        transition: all 0.7s ease;
+      }
+      input[type="email"] {
+        background-color: rgb(143, 225, 213);
+        color: black;
+        margin: 10px;
+        border-radius: 5px;
+        margin-left: 28px;
+        transition: all 0.7s ease;
+      }
+      input[type="password"] {
+        background-color: rgb(143, 225, 213);
+        color: black;
+        margin: 10px;
+        border-radius: 5px;
+        transition: all 0.7s ease;
+      }
+      button[type="submit"] {
+        background-color: greenyellow;
+        border-radius: 4px;
+      }
+
+      button[type="reset"] {
+        background-color: rgb(244, 61, 48);
+        border-radius: 4px;
+      }
+      h1:hover {
+        background-color: aquamarine;
+        transition: 0.5s ease;
+        transform: scale(1.1);
+      }
+
+      input:hover {
+        background-color: rgb(95, 235, 207);
+        padding: auto;
+        transform: scale(1.1);
+      }
+      input:focus {
+        background-color: rgb(38, 204, 212);
+        transform: scale(1.2);
+      }
+      fieldset:hover {
+        background-color: rgb(142, 206, 211);
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 1px 8px 12px rgb(68, 96, 103);
+        transition: 0.7s ease;
+        transform: scale(1.2);
+      }
+
+      button:hover {
+        background-color: wheat;
+        transition: 0.6s ease;
+        transform: scale(1.1);
+      }
+
+      input::placeholder {
+        color: black;
+      }
+
+      fieldset {
+        margin: 100px 250px;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      input::placeholder {
+        /* pseudo element*/
+        color: rgb(84, 22, 147);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Log in for your self</legend>
+        <h1>Log in for simple page</h1>
+        <details>
+          <summary
+            style="
+              background-color: brown;
+              max-width: 300px;
+              padding: 3px;
+              border-radius: 5px;
+              text-align: center;
+            "
+          >
+            Click Here For some informatrion
+          </summary>
+          This page is made for some fun , its not a page of ... rj resul bhhot
+          fm.
+        </details>
+        <div>
+          <label for="fuln">Enter your FullName :</label>
+          <input
+            type="text"
+            name="fuln"
+            id="fuln"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="mail">Enter your E-Mail :</label>
+          <input type="email" name="mail" id="name" placeholder="Your Email" />
+        </div>
+        <div>
+          <label for="pass">Enter youe Password : </label>
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Your own Password"
+          />
+        </div>
+
+        <div class="button">
+          <button type="submit">submit</button>
+          <button type="reset">Clear</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z_index & css3 variables</title>
+    <style>
+      :root {
+        --divfirst-color: rgb(63, 23, 23);
+        --divsecond-color: rgb(61, 61, 161);
+      }
+      div {
+        height: 250px;
+        width: 250px;
+      }
+      .div-1 {
+        background-color: rgb(53, 53, 113); /* its wwork in internet exploer*/
+        background: var(--divfirst-color);
+        position: absolute;
+        z-index: 4;
+      }
+      .div-2 {
+        background-color: red;
+        background: var(
+          --divsecond-color,
+          rgb(138, 220, 138)
+            /*fall-back color add , if the variable not work properly */
+        );
+        position: absolute;
+        z-index: 6;
+        left: 90px;
+        top: 90px;
+      }
+      /* z index ,decide kore stack er oreder er upor,that's maintain the stack oder ,, main thik is that -- its mainly work in position sector.*/
+
+      @media screen and (max-width: 900px) {
+        :root {
+          --divfirst-color: blue;
+          --divsecond-color: red;
+
+          /*css3 variable responsive kivabe korbo  */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-1"></div>
+    <br />
+    <div class="div-2"></div>
+  </body>
+</html>

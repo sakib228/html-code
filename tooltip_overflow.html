@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow & Tooltip</title>
+    <style>
+      .overflow {
+        height: 150px;
+        background-color: aqua;
+        max-width: 200px;
+        border-radius: 5px;
+        border: 3px double blue;
+        overflow: auto; /* overflow propertices - best practice is auto*/
+      }
+
+      .main_tooltip {
+        position: relative;
+      }
+
+      .main_tooltip .sub_tooltip {
+        visibility: hidden;
+        border: 2px solid gold;
+        background-color: gray;
+        color: white;
+        padding: 5px;
+        border-radius: 15px;
+        position: absolute;
+        top: 20px;
+        left: 34px;
+        z-index: 1;
+      }
+      .main_tooltip:hover .sub_tooltip {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body style="background-color: azure; margin: 20 auto">
+    <div class="main_tooltip">
+      <a href="https://www.youtube.com">YoutTube</a>
+      <span class="sub_tooltip">
+        This is a social medida and enterterment sector site ~</span
+      >
+    </div>
+    <br />
+    <div class="overflow">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat magni
+        molestiae nemo quos dignissimos? Corrupti at exercitationem assumenda
+        incidunt magni vitae voluptas accusantium numquam, commodi impedit qui
+        soluta voluptatem, facere, error fuga laboriosam doloremque hic ut minus
+        alias officia laborum.
+      </p>
+    </div>
+  </body>
+</html>

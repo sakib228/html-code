@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation-apna collage</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        margin: 0px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .loading {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 15px solid black;
+        border-top: 15px solid #5b85aa;
+        text-align: center;
+        animation: spin 1s linear 0s infinite normal;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* --------------- */
+      span {
+        position: absolute;
+        left: 20px;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body style="background-color: bisque">
+    <div class="loading"></div>
+  </body>
+</html>

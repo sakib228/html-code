@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html- assivitity</title>
+    <style>
+      body {
+        background-color: khaki;
+      }
+      table,
+      td,
+      th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      style="
+        text-align: center;
+        background-color: aqua;
+        font-family: Times New Roman;
+      "
+    >
+      <h1>html</h1>
+    </header>
+    <main>
+      <table>
+        <caption>
+          html information
+        </caption>
+        <colgroup>
+          <col span="3" style="background-color: blueviolet" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">name</th>
+            <th scope="col">roll</th>
+            <th scope="col">gpa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td span="2" scope="row">sakib hossain</td>
+            <td>228</td>
+            <td>3.45</td>
+          </tr>
+          <tr>
+            <td scope="row">rakib</td>
+            <td>229</td>
+            <td>3.88</td>
+          </tr>
+          <tr>
+            <td scope="row">rana</td>
+            <td>223</td>
+            <td>3.28</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

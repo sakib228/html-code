@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body style="background-color: aquamarine">
+    <form>
+      <div>
+        <level for="FullName">FullName:</level>
+        <input type="text" name="FullName" id="FullName" required />
+      </div>
+      <br />
+      <div>
+        <level for="date">Date Of Birth:</level>
+        <input type="date" name="dob" id="dob" style="background-color: gray" />
+      </div>
+      <br />
+      <div>
+        <level for="Password">Password:</level>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          style="background-color: gray"
+        />
+      </div>
+      <br />
+      <div>
+        <level for="email">Email:</level>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          style="background-color: blueviolet"
+        />
+      </div>
+      <br />
+      <div>
+        <level for="photo">chose tour Photo:</level>
+        <input type="file" name="file" id="file" />
+      </div>
+      <div>
+        <level for="gender">gender:</level>
+        <input type="radio" name="gender" id="male" value="male" /> male
+        <input type="radio" name="gender" id="female" value="female" /> female
+        <input type="radio" name="gender" id="others" /> others
+      </div>
+      <br />
+      <div>
+        <level for="checkbox">religion:</level>
+        <input type="checkbox" name="checkbox" id="islam" value="islam" /> islam
+        <input type="checkbox" name="checkbox" id="hindu" value="hindu" /> hindu
+        <input type="checkbox" name="checkbox" id="other" value="other" /> other
+      </div>
+      <br />
+      <div>
+        <level for="department">department</level>
+        <select name="department">
+          <option selected value="cse">cse</option>
+          <option value="eee">eee</option>
+          <option value="bba">bba</option>
+        </select>
+      </div>
+      <br />
+      <div><level for="message"> Message :</level></div>
+      <textarea rows="12" cols="25"></textarea><br />
+      <div>
+        <input type="submit" value="register" disabled />
+        <input type="reset" value="clear" />
+      </div>
+    </form>
+    <abbr title="text">text</abbr>
+  </body>
+</html>

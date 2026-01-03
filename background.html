@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gradient</title>
+
+    <style>
+      body {
+        background-color: bisque;
+        text-align: center;
+      }
+      h1::after {
+        content: "";
+        height: 5px;
+        width: 100%;
+        display: block;
+        background-color: black;
+        margin-top: 10px;
+      }
+      .gradient {
+        height: 300px;
+        width: 100%;
+        background: radial-gradient(
+          circle,
+          /* degree*/ white,
+          black,
+          red,
+          white,
+          black,
+          blue,
+          green,
+          white,
+          black
+        );
+      } /* there are two type of matter for color , liber and radial gadient*/
+
+      h1::before {
+        content: "";
+        height: 6px;
+        width: 100%;
+        background-color: black;
+        display: block;
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>this is gradient</h1>
+    <div class="gradient"></div>
+  </body>
+</html>

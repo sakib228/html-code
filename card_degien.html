@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card-degien</title>
+    <style>
+      .bg-continer {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(74, 235, 190);
+        padding: 20px;
+      }
+      .main-card {
+        width: 300px;
+        margin: 15px;
+        box-sizing: border-box;
+        box-shadow: 10px 8px 15px rgb(83, 61, 61);
+        border-radius: 10px;
+        padding: 3px;
+        border: 3px solid white;
+      }
+      .image {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .title {
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: azure;
+        background-color: black;
+      }
+      .discrip {
+        font-size: 16px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background: #0cbbfa;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+      }
+
+      .main-card:hover {
+        box-shadow: 12px 12px 20px rgb(235, 239, 235);
+        border: 3px solid black;
+        transition: 0.8s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-continer">
+      <div class="main-card">
+        <img class="image" src="picture/munjarin.jpg" />
+        <div class="information">
+          <div class="title">Hi ! munjarin ❤️</div>
+
+          <div class="discrip">
+            Winner – Wall Magazine & Poster Exhibition Competition •
+            Successfully completed a 2-day exclusive workshop and industrial
+            visit at Creative IT Institute on “The AI Revolution in Digital
+            Marketing,” organized by the BUBT Business Club (Workshop: 21st Oct
+            2024; Industrial Visit: 23rd Oct 2024)
+          </div>
+        </div>
+      </div>
+
+      <div class="main-card">
+        <img class="image" src="picture/sakib1.jpg" alt="sakib image" />
+        <div class="information">
+          <div class="title">Hi ! Sakib ❤️</div>
+
+          <div class="discrip">
+            Technical Skills - Programming Languages: C, C++ - Web Technologies:
+            HTML, CSS, JavaScript (basic knowledge) - Other Skills: Strong
+            communication, logical thinking, leadership in academic
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text shadow and box shadow</title>
+    <style>
+      p {
+        /* text shadow */
+        text-shadow: 3px 3px 4px forestgreen;
+        font-size: 30px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .boxshadow {
+        border: 4px solid black;
+        padding: 10px;
+        margin: 5px;
+        text-align: left;
+        background-color: aqua;
+        max-width: 170px;
+        border-radius: 15px;
+        transition: 0.5s ease;
+      }
+      .boxshadow:hover {
+        box-shadow: 15px 15px 10px rgb(74, 103, 114);
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+      }
+    </style>
+  </head>
+  <body style="background-color: beige">
+    <div>
+      <p>This is the End</p>
+    </div>
+    <div class="boxshadow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus
+      deserunt perferendis, labore asperiores molestias est alias eius quasi ut
+      veniam. Eligendi, numquam obcaecati dicta fugit harum incidunt
+      repellendus, minima dolorem, rem adipisci blanditiis nostrum debitis? Odio
+      architecto quidem facilis?
+    </div>
+  </body>
+</html>

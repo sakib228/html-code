@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html-1st module</title>
+    <link rel="icon" href="pro_01.jpeg" />
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="fulname">Enter Name : </label>
+        <input
+          type="text"
+          name="fulname"
+          id="fulname"
+          placeholder="Enter Your fullName"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="mail">Enter Email : </label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Enter your own mail"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="pass">Enter Password : </label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="Your Password"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="gender">Selet Your Gender : </label>
+        <input type="radio" name="gender" id="gen1" value="male" required />Male
+        <input type="radio" name="gender" id="gen2" value="female" />female
+        <input
+          required
+          type="radio"
+          name="gender"
+          id="gen3"
+          value="others"
+        />Others
+      </div>
+      <br />
+      <div>
+        <label for="dev">Select Your deaertment : </label>
+        <select name="dev" id="dev" required>
+          <option value=" ">Chose One</option>
+          <option value="cse">Cse</option>
+          <option value="bba">Bba</option>
+          <option value="eee">eee</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="country">Choose Your country : </label>
+        <input type="checkbox" name="country1" id="c1" value="ban" />Bangladesh
+        <input type="checkbox" name="country2" id="c2" value="in" />India
+        <input type="checkbox" name="country3" id="c3" value="ca" />Canada
+        <input type="checkbox" name="country4" id="c4" value="others" />Others
+      </div>
+      <br />
+      <div>
+        <label for="mess">Enter Your opinion :</label><br />
+        <textarea name="mess" id="mess" rows="8" cols="20"></textarea>
+      </div>
+      <div>
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+  </body>
+</html>

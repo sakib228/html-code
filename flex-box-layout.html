@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-box layout</title>
+    <style>
+      .main-class {
+        background-color: aquamarine;
+        display: flex;
+        border: 3px double rgb(35, 28, 35);
+        border-radius: 15px;
+        /*flex-direction: column;
+        flex-wrap: wrap;*/
+        flex-flow: wrap row;
+        justify-content: center; /*( for flex box layout er jonno use kora hoi center propartices justify center )*/
+        /* space-around use korle , left-right ekements er modde o space thakbe,,,( but between use korle shudu martro elements er modde space thakbe )*/
+        height: 300px;
+        align-items: center; /* er maddome amara akadik item ekta div a separate kore rakhte pari */
+
+        /*perfectly center a aner jonno oboshoi - justufy-content and align-items ke center kore dite hobe */
+      }
+      .main-class > div {
+        width: 100px;
+        padding: 15px;
+        margin: 10px;
+        color: bisque;
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: beige">
+    <div class="main-class">
+      <div class="div1" style="order: 2; flex-basis: 100px">Flex1</div>
+      <div class="div2" style="order: 3">Flex2</div>
+      <div class="div3" style="order: 4">Flex3</div>
+      <div class="div4">Flex4</div>
+      <div class="div1">Flex5</div>
+      <div class="div2">Flex6</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav-ber apna-collage</title>
+    <style>
+      * {
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+      .container {
+        background-color: azure;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 10px;
+      }
+      .container:hover {
+        background: linear-gradient(
+          55deg,
+          white,
+          #5c67ab,
+          #414770,
+          rgb(149, 128, 128),
+          #372248,
+          #3c355c,
+          rgb(173, 172, 172)
+        );
+        transition: 0.7s ease;
+        transform: scale(1.1);
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      ul > li {
+        list-style-type: none;
+        background-color: aquamarine;
+        border-radius: 15px;
+        padding: 5px;
+        border: 2px solid green;
+        display: inline;
+      }
+      li:hover {
+        transition: all 0.7s ease-in-out;
+        background-color: aqua;
+        transform: scale(1.1);
+      }
+      .outer {
+        width: 600px;
+        height: 300px;
+        background-color: #414770;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .inner {
+        height: 100px;
+        width: 200px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        border: 3px solid black;
+        text-align: center;
+        align-self: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#"> About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="outer">
+      <div class="inner">hello world</div>
+    </div>
+  </body>
+</html>
