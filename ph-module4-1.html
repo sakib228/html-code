@@ -3,75 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>audio and video section</title>
+    <title>artical</title>
     <style>
-        ul li a{
+        *{
+            margin: 10px 10px;
+            padding: 0px;
+        }
+        body{
+            background-color: bisque;
+        }
+        nav ul li a{
             text-decoration: none;
+            color: black;
+            font-size: 20px;
         }
-        ul li{
-            list-style-type: none;
+        nav ul li{
+            list-style: none;
+             margin-left: 25px;
         }
-        nav li{
-            display: inline-block;
-            margin-left: 25px;
+        nav ul{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(202, 159, 103);
+            border-radius: 15px;
+        }
+        nav:hover{
+            background-color: rgb(109, 75, 32);
+            transition: all 0.5s ease;
+        }
+        nav li:hover{
+            background-color: rgb(11, 76, 89);
+            border-radius: 10px;}
+        nav{
+            background-color: rgb(6, 214, 214);
+        }
+        nav ul:hover{
+            background-color: cadetblue;
+             transition: all 0.5s ease;
+        }
+        nav ul li a:hover{
+            color: azure;
+            text-decoration: underline;
+             transition: all 0.5s ease;
+        }
+        img{
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 12px;
+        }
+        img:hover{
+            transform: scale(1.1);
+            transition:all 0.5s ease-in-out;
+        }
+        body footer{
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer:hover{
+            background-color: brown;
+            color: azure;
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+            border-radius: 20px;
+
+        }
+        footer, p, small{
+             padding: 1px;
+        }
+        button{
+            background-color: aquamarine;
+        }
+        button a{
+            color: black;
         }
     </style>
 </head>
 <body>
-    <!-- <audio controls >
-        <source src="picyure/audio.mp3" type="audio/mp3">
-        your brouser does not support your video
-    </audio>
-    <br>
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-        this video doesn't support your browser
-    </video>
-    <br><br>
-    <iframe width="360" height="360" src="https://www.youtube.com/embed/PW1tbcBW5kg?si=oOE1M9YGudVhbgiq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
     <header>
         <nav>
-             <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Help</a></li>
-        </ul>
+            <ul>
+                <li><a href="#"> Home </a> </li>
+                <li><a href="#"> About </a> </li>
+                <li><a href="#"> Contact </a> </li>
+                <li><a href="#"> Servics </a> </li>
+            </ul>
         </nav>
     </header>
     <main>
-        <article>
-            <header>
-                <h1>This is a artical page</h1>
-           
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam suscipit distinctio id nulla totam blanditiis, excepturi a? Delectus sunt ad sequi fugiat at veritatis, magni quae atque quia animi dolorem odit sit est aspernatur id explicabo quam sint minus.</p>
-             </header>
-             <figure>
-                <img src="picture/cat.jpg" width="400px" alt="this is a cat picture">
-                <figcaption>this is a cat picture </figcaption>
-             </figure>
-             <section>
-                <h3> how to go there</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam eligendi dignissimos repudiandae alias. Debitis pariatur vero quaerat quae, delectus quas. Dolorem accusamus voluptatibus laudantium necessitatibus harum, voluptates impedit ab.</p>
-             </section>
-             <section>
-                <h5> how to go there</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam eligendi dignissimos repudiandae alias. Debitis pariatur vero quaerat quae, delectus quas. Dolorem accusamus voluptatibus laudantium necessitatibus harum, voluptates impedit ab.</p>
-             </section>
-             <section>
-                <h5> how to go there</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam eligendi dignissimos repudiandae alias. Debitis pariatur vero quaerat quae, delectus quas. Dolorem accusamus voluptatibus laudantium necessitatibus harum, voluptates impedit ab.</p>
-             </section>
-             <section>
-                <h5> how to go there</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam eligendi dignissimos repudiandae alias. Debitis pariatur vero quaerat quae, delectus quas. Dolorem accusamus voluptatibus laudantium necessitatibus harum, voluptates impedit ab.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam eligendi dignissimos repudiandae alias. Debitis pariatur vero quaerat quae, delectus quas. Dolorem accusamus voluptatibus laudantium necessitatibus harum, voluptates impedit ab.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam eligendi dignissimos repudiandae alias. Debitis pariatur vero quaerat quae, delectus quas. Dolorem accusamus voluptatibus laudantium necessitatibus harum, voluptates impedit ab.</p>
-             </section>
-        </article>
+        <section>
+            <h1> This is a Food Story</h1>
+            <details> <summary> Click here to know about this page sections .</summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci quibusdam, at aut maiores vel!</details>
+        </section>
+        <figure>
+            <img src="picture/food1.jpg" alt="this a food picture">
+            <figcaption>This is a delicious food </figcaption>
+        </figure>
+        <section>
+            <h4>How to eat that food </h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt labore facere sapiente, ut aut minus dolorem iure nam maxime temporibus ratione culpa ipsa aliquam voluptatum quaerat, autem, placeat libero beatae!</p>
+        </section>
+        <section>
+            <h2>Try it</h2>
+            <details><summary>Click to know about this food</summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quidem dolor aspernatur!</details>
+        </section>
+        <figure>
+            <img src="picture/food2.jpg" alt="this is a food picture">
+            <figcaption>Another delicious food ever</figcaption>
+        </figure>
+        <section>
+            <h4>how to try and known about this food </h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus obcaecati, recusandae aliquam tenetur reprehenderit consequatur molestiae, tempora sint delectus repudiandae eius. Reprehenderit quae voluptas quod eaque ipsam tempore quibusdam sed!</p>
+        </section>
+        <button><a href="ph-module4-prac-1.html">Back to Page</a></button>
     </main>
     <footer>
-        <p> <small>&copy; copyright - 2034</small></p>
+        <p><small> There is a copy right strike &copy;copyright 2027</small></p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero section</title>
+    <style>
+          *{
+            margin: 10px 20px;
+            padding: 0px;
+        }
+        body{
+            background-color: bisque;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        nav ul li{
+            list-style: none;
+             margin-left: 25px;
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(202, 159, 103);
+            border-radius: 15px;
+        }
+        nav:hover{
+            background-color: rgb(109, 75, 32);
+            transition: all 0.5s ease;
+        }
+        nav li:hover{
+            background-color: rgb(11, 76, 89);
+            border-radius: 10px;}
+        nav{
+            background-color: rgb(6, 214, 214);
+            margin-bottom: 20px;
+        }
+        nav ul:hover{
+            background-color: cadetblue;
+             transition: all 0.5s ease;
+        }
+        nav ul li a:hover{
+            color: azure;
+            text-decoration: underline;
+             transition: all 0.5s ease;
+        }
+        img{
+            width: 300px;
+            border-radius: 12px;
+            border: 3px double white;
+        }
+        .hero_container{
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            border: 2px solid goldenrod;
+            border-radius: 15px;
+        }
+       .image_level img:hover{
+            transform: scale(1.1);
+            transition: all 0.6s ease;
+        }
+        button{
+            padding: 6px 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+            box-shadow: 5px 5px 10px white;
+        }
+        button:hover{
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+            color:black;
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <ul>
+                <li><a href="#"> Home </a> </li>
+                <li><a href="#"> About </a> </li>
+                <li><a href="#"> Contact </a> </li>
+                <li><a href="#"> Servics </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero_container">
+            <div>
+                <h1>This is a Food Page</h1>
+                <details><summary >Click here to more Inf</summary> Food Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quisquam eligendi consequatur natus repellat cupiditate maiores expedita </details>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa consequuntur vitae maiores earum tempora dignissimos, labore facere reprehenderit dolorem suscipit aliquid magni.</p>
+                <button>submit</button>
+
+            </div>
+            <div class="image_level">
+                <figure>
+                    <img src="picture/food1.jpg" alt="this is a food picture">
+                    <figcaption style="text-align: center;">Chiken tai boule</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
