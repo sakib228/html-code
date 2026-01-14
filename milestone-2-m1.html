@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+    <style>
+        .flex_nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container a{
+            text-decoration: none;
+            color: black;
+        }
+        .log a{
+            text-decoration: none;
+            color: black;
+        }
+        /* login section */
+        .login {
+            border: 3px solid;
+            display: flex;
+             justify-content: center; 
+             align-items: center;
+             flex-direction: column;
+            width: 50%;
+            height: 50%;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            height: 500px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="flex_nav">
+         <div class="container">
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+            <a href="#">services</a>
+            <a href="#">Contact</a>
+         </div>
+         <div class="log">
+            <a href="#">Login</a>
+         </div>
+    </nav>
+    <div class="parent">
+        <div class="login">
+        <label for="name">Enter your Name : </label>
+        <input type="text" name="name" id="name" placeholder="enter your name">
+        <label for="mail">Enter your email : </label>
+        <input type="email" name="mail" id="mail" placeholder="enter your email">
+        <label for="pass">Enter your password : </label>
+        <input type="password" name="pass" id="pass" placeholder="Enter your password">
+    </div>
+    </div>
+    
+   
+    
+</body>
+</html>

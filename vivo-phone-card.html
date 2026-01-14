@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vivo_phone collection</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family:sans-serif;
+        }
+        body{
+            max-width: 976px;
+            margin: 0 auto;
+            /* border: 2px solid; */
+        }
+        .container{
+            width: 100%; 
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 20px;
+            row-gap: 30px;
+         
+            background-color: rgb(210, 237, 228);
+            padding: 15px;
+            
+        }
+       .container .card{
+        width: 100%;
+        /* border: 2px double red; */
+          padding: 15px;
+          background-color: aliceblue;
+          border: 2px solid hotpink;
+          border-radius: 15px;
+          line-height: 20px;
+          font-size: 1rem;
+          display: flex;
+          flex-direction: column;
+       }
+          .container .card:hover{
+            background-color: rgb(181, 243, 243);
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+            color: black;
+          }
+       .card img{
+        width: 100%;
+        border-radius: 10px;
+       }
+       img:hover{
+        transform: scale(1.1);
+        transition: all 0.5s;
+       }
+       .card h2{
+        padding:10px 0px 10px 0px;
+       }
+       /* button sectior */
+       button{
+        padding: 10px 30px;
+        border-radius: 10px;
+        background-color: aquamarine;
+        background: linear-gradient(55deg,#ffccff,#ffcc99,#ffffff);
+       }
+       button:hover{
+        background-color: rgb(54, 53, 53);
+        color: gray;
+        transition: all 0.5s ease-in;
+        transform: scale(1.1);
+       }
+       h1{
+        text-align: center;
+        padding-bottom: 20px;
+       }
+       p{
+        padding-bottom: 8px;
+       }
+       @media screen and (max-width:576px){
+        .container {
+            grid-template-columns: repeat(1,1fr);
+            background-color: rgb(152, 203, 228);
+        }
+       }
+       @media screen and (min-width: 576px) and (max-width:900px) {
+        .container{
+             grid-template-columns: repeat(2,1fr);
+            background-color: rgb(185, 233, 191);
+            color: darkgrey;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Popular Collection</h1>
+    </div>
+    <section class="container">
+        <div class="card">
+            <img src="picture/vivo2.jpeg" alt="this is vivo phn">
+              <h2>best-phone-collection</h2>
+            <p>this is the best phone to sell,naw days the collection of vivo phone and the sell of vivo phone is more and more </p>
+            <p>Price : 10000</p>
+            <button> Buy now</button>
+        </div>
+        <div class="card">
+            <img src="picture/vivo3.jpeg" alt="this is vivo phn">
+            <h2>best-phone-collection</h2>
+            <p>this is the best phone to sell,naw days the collection of vivo phone and the sell of vivo phone is more and more </p>
+            <p>Price : 20000</p>
+             <button> Buy now</button>
+        </div>
+        <div class="card">
+            <img src="picture/vivo4.jpeg" alt="this is vivo phn">
+            <h2>best-phone-collection</h2>
+            <p>this is the best phone to sell,naw days the collection of vivo phone and the sell of vivo phone is more and more </p>
+            <p>Price : 30000</p>
+             <button> Buy now</button>
+        </div>
+        <div class="card">
+            <img src="picture/vivo5.jpeg" alt="this is vivo phn">
+            <h2>best-phone-collection</h2>
+            <p>this is the best phone to sell,naw days the collection of vivo phone and the sell of vivo phone is more and more </p>
+            <p>Price : 40000</p>
+             <button> Buy now</button>
+        </div>
+        <div class="card">
+            <img src="picture/vivo2.jpeg" alt="this is vivo phn">
+            <h2>best-phone-collection</h2>
+            <p>this is the best phone to sell,naw days the collection of vivo phone and the sell of vivo phone is more and more </p>
+            <p>Price : 50000</p>
+             <button> Buy now</button>
+        </div>
+        <div class="card">
+           <img src="picture/vivo13.jpeg" alt="thid id vivo phn">
+            <h2>best-phone-collection</h2>
+            <p>this is the best phone to sell,naw days the collection of vivo phone and the sell of vivo phone is more and more </p>
+            <p>Price : 60000</p> 
+            <button> Buy now</button>
+        </div>
+        <div class="card">
+            <img src="picture/vivo6.jpeg" alt="this is vivo phn">
+            <h2>best-phone-collection</h2>
+            <p>this is the best phone to sell,naw days the collection of vivo phone and the sell of vivo phone is more and more </p>
+            <p>Price : 70000</p>
+             <button> Buy now</button>
+        </div>
+        <div class="card">
+            <img src="picture/vivo7.jpeg" alt="this is vivo phn">
+            <h2>best-phone-collection</h2>
+            <p>this is the best phone to sell,naw days the collection of vivo phone and the sell of vivo phone is more and more </p>
+            <p>Price : 80000</p>
+             <button> Buy now</button>
+        </div>
+        <div class="card">
+            <img src="picture/vivo10.jpeg" alt="this is vivo phn">
+            <h2>best-phone-collection</h2>
+            <p>this is the best phone to sell,naw days the collection of vivo phone and the sell of vivo phone is more and more </p>
+            <p>Price : 90000</p>
+             <button> Buy now</button>
+        </div>
+        </section>
+</body>
+</html>

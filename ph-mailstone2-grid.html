@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid ph</title>
+    <style>
+        .container .helo{
+            border: 2px solid black;
+            padding: 20px;
+        }
+        .container{
+            display: grid;
+            gap: 10px;
+            height: 100vh;
+            /* border: 2px solid; */
+            /* grid-template-columns: 200px 200px 200px 200px; */
+            /* grid-template-columns: repeat(3,1fr); */
+            /* grid-template-columns: 100px auto 100px; */
+            grid-template-rows: repeat(2,100px);
+            grid-template-columns: repeat(2, 100px);
+            justify-content: center;
+            /* horizontal (left to right*/
+            align-items:center;
+            /* vertical ( top to bottom)*/
+            /* border: 3px solid; */
+        }
+    </style>
+</head>
+<body>
+    <p>this is the grid section</p>
+    <div class="container">
+        <div class="helo">helo-1</div>
+        <div class="helo">helo-2</div>
+        <div class="helo">helo-3</div>
+        <div class="helo">helo-4</div>
+        
+        
+     
+    </div>
+</body>
+</html>
